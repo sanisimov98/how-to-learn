@@ -1,4 +1,6 @@
-h1, h2, h3, h4, h5, h6, p, span, div, a, link {
+/* Общие правила */
+
+h1, h2, h3, h4, h5, h6, p, span, div, a {
   margin: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   text-decoration: none;
@@ -15,6 +17,37 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
     /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+/* Вспомогательные блоки */
+
+.background_theme_dark {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* Лого */
+
+.logo {
+  height: 32px;
+  width: 183px;
+}
+
+.logo_place_header {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+}
+
+.logo_place_footer {
+  height: 35px;
+}
+
+.footer__column-links:nth-child(4n) {
+  margin-bottom: 16px;
+}
+
+
+/* Шапка сайта */
 
 .header {
     height: 100vh;
@@ -73,6 +106,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
   z-index: 1;
 }
 
+/* Блок "Главные проблемы в обучении" */
+
 .description {
   display: flex;
   justify-content: center;
@@ -112,6 +147,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
 .two-columns__paragraph:nth-of-type(2n) {
   margin: 30px auto;
 }
+
+/* Блок "Цифры и факты" */
 
 .digits {
   display: flex;
@@ -163,6 +200,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
   margin-top: 20px;
 }
 
+/* Блок "Метод Фейнмана" */
+
 .feynman {
   height: 790px;
   background-position: bottom left;
@@ -201,10 +240,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
   color: black;
 }
 
-.background_theme_dark {
-  background-color: #1f1f1f;
-  color: white;
-}
+/* Блок "Принципы обучения" */
 
 .kaufman {
   display: flex;
@@ -212,6 +248,15 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
   align-items: center;
   overflow: hidden;
   position: relative;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  z-index: 0;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
 }
 
 .section-title_theme_dark{
@@ -237,14 +282,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
     margin-top: 80px;
 }
 
-.kaufman__triangle {
-  position: absolute;
-  z-index: 0;
-  width: 877px;
-  height: 877px;
-  right: -210px;
-  top: 0;
-}
+/* Подвал сайта */
 
 .footer {
   min-height: 350px;
@@ -304,23 +342,4 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.logo {
-  height: 32px;
-  width: 183px;
-}
-
-.logo_place_header {
-  position: absolute;
-  left: 64px;
-  top: 30px;
-}
-
-.logo_place_footer {
-  height: 35px;
-}
-
-.footer__column-links:nth-child(4n) {
-  margin-bottom: 16px;
 }
