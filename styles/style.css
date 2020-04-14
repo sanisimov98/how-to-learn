@@ -1,12 +1,5 @@
 /* Общие правила */
 
-h1, h2, h3, h4, h5, h6, p, span, div, a {
-  margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  text-decoration: none;
-
-}
-
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,14 +9,18 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
     margin: 0 auto;
     /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
 }
 
 /* Вспомогательные блоки */
 
-.background_theme_dark {
-  background-color: #1f1f1f;
-  color: white;
-}
+.table__heading_theme_dark {}
+
+.table__text_theme_dark {}
+
+.footer__column_content_info {}
+
+.footer__column_content_social {}
 
 /* Лого */
 
@@ -187,7 +184,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   z-index: 2;
 }
 
-.table__title {
+.table_heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -221,6 +218,9 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   font-size: 120px;
   font-weight: bold;
   text-align: center;
+  /* без этих указаний браузер (по крайней мере мой Chrome) добавляет блокам h2 настройки margin-block-start: 0.18em и margin-block-end: 0.18em; */
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .feynman__subtitle {
@@ -238,6 +238,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   font-size: 36px;
   font-weight: normal;
   color: black;
+  text-decoration: none;
 }
 
 /* Блок "Принципы обучения" */
@@ -248,6 +249,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   align-items: center;
   overflow: hidden;
   position: relative;
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .kaufman__triangle {
@@ -257,6 +260,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   height: 877px;
   right: -210px;
   top: 0;
+  background-image: url('../images/kaufman-triangle.svg');
+  background-repeat: no-repeat;
 }
 
 .section-title_theme_dark{
@@ -288,6 +293,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   min-height: 350px;
   display: flex;
   justify-content: center;
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .footer__columns {
@@ -300,13 +307,14 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   margin-bottom: 40px;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
-}
-
-.footer__column_content_info {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .footer__column-heading {
@@ -314,11 +322,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
 }
 
 .footer__social-icon {
@@ -329,7 +333,6 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
 
 .footer__author {
   margin: 18px 0;
-  position: absolute;
   left: 0;
   bottom: 0;
   line-height: 25px;
@@ -342,4 +345,5 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  list-style: none;
 }
