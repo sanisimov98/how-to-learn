@@ -178,11 +178,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .table__cell {
   width: 250px;
-  margin-top: 60px;
+  margin: 60px 0 0 0;
   z-index: 2;
 }
 
@@ -282,15 +283,13 @@
 }
 
 .table_theme_dark{
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
 }
 
-/* стиль для класса table__heading описан выше, в блоке "цифры и факты" :) */
-
 .table__cell_theme_dark {
-    width: 200px;
-    margin-right: 0;
-    margin-top: 80px;
+  width: 200px;
+  color: white;
+  margin: 80px 0 0 0;
 }
 
 /* Подвал сайта */
