@@ -265,6 +265,7 @@
   top: 0;
   background-image: url('../images/kaufman-triangle.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-title_theme_dark{
