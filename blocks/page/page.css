@@ -1,0 +1,37 @@
+@import url('../digits/digits.css');
+@import url('../description/description.css');
+@import url('../header/header.css');
+@import url('../logo/logo.css');
+@import url('../section-title/section-title.css');
+@import url('../section-title/_theme/section-title_theme_dark.css');
+@import url('../section-subtitle/section-subtitle.css');
+@import url('../section-subtitle/_theme/section-subtitle_theme_dark.css');
+@import url('../two-columns/two-columns.css');
+@import url('../table/table.css');
+@import url('../techniques/techniques.css');
+@import url('../cards/cards.css');
+@import url('../video/video.css');
+@import url('../oakley/oakley.css');
+@import url('../khan/khan.css');
+@import url('../feynman/feynman.css');
+@import url('../kaufman/kaufman.css');
+@import url('../resources/resources.css');
+@import url('../footer/footer.css');
+@import url('../rotation/rotation.css');
+@import url('../link/link.css');
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-decoration: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

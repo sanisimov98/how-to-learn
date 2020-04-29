@@ -1,0 +1,10 @@
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  /* без этих указаний браузер (по крайней мере мой Chrome) добавляет блокам h2 настройки margin-block-start: 0.18em и margin-block-end: 0.18em; */
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
