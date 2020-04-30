@@ -3,9 +3,7 @@
 @import url('../header/header.css');
 @import url('../logo/logo.css');
 @import url('../section-title/section-title.css');
-@import url('../section-title/_theme/section-title_theme_dark.css');
 @import url('../section-subtitle/section-subtitle.css');
-@import url('../section-subtitle/_theme/section-subtitle_theme_dark.css');
 @import url('../two-columns/two-columns.css');
 @import url('../table/table.css');
 @import url('../techniques/techniques.css');
@@ -18,7 +16,6 @@
 @import url('../resources/resources.css');
 @import url('../footer/footer.css');
 @import url('../rotation/rotation.css');
-@import url('../link/link.css');
 
 .page {
   min-width: 1100px;

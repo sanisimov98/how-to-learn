@@ -3,11 +3,8 @@
 @import url('./__title/feynman__title.css');
 
 .feynman {
-  height: 790px;
-  background-position: bottom left;
-  background-image: url('../../images/feynman.png');
-  background-repeat: no-repeat;
-  background-color: #f2f2f2;
+  min-height: 790px;
+  background: no-repeat left bottom url('../../images/feynman.png') #f2f2f2;
   display: flex;
   position: relative;
   flex-direction: column;
